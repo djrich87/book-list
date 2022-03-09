@@ -8,5 +8,14 @@
 </head>
 <body>
   <h1>Book List</h1>
+  <% books.forEach(book => { %>
+    <h2>
+      <%= book.name %>
+      -
+      <%= book.title ? 'is read' : 'is not read' %>
+    </h2>
+    
+
+<% }) %>
 </body>
 </html>
