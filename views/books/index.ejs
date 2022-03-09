@@ -10,9 +10,14 @@
   <h1>Book List</h1>
   <% books.forEach(book => { %>
     <h2>
-      <%= book.name %>
+      <a href="/books/<%= book._id %>">
+        <%= book.name %>
+      </a>
       -
       <%= book.title ? 'is read' : 'is not read' %>
+      <form method="POST" action="/books/<%= book._id %>?_method=DELETE">
+        <button>Delete <%= book.name %></button>
+      </form>
     </h2>
     
 
