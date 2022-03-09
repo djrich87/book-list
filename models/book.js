@@ -8,7 +8,7 @@ const bookSchema = new Schema({
   },
   title: {
     type: Boolean, 
-    // read: false,
+    read: false,
   },
 }, {
   timestamps: true
