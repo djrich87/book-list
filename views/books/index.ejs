@@ -8,6 +8,8 @@
 </head>
 <body>
   <h1>Book List</h1>
+  <a href="http://localhost:3000/books/new">Add a new book</a>
+  <h2>There are no books yet</h2>
   <% books.forEach(book => { %>
     <h2>
       <a href="/books/<%= book._id %>">
@@ -22,5 +24,6 @@
     
 
 <% }) %>
+
 </body>
 </html>
