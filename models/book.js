@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 
 const bookSchema = new Schema({
   name: {
-    type: String
+    title: String
   },
   title: {
     type: Boolean, 
